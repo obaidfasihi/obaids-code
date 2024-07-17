@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Creator</title>
+    <link rel="stylesheet" href="mistyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Create a Card</h1>
+            <form id="cardForm">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <input type="text" id="title" name="title" placeholder="Title" required>
+                <textarea id="description" name="description" placeholder="Description" required></textarea>
+                <input type="file" id="image" name="image" accept="image/*">
+                <input type="number" id="price" name="price" placeholder="Price" required>
+                <button type="submit">Create Card</button>
+            </form>
+            <div id="totalBillContainer"></div>
+        </div>
+        <div class="cards-container" id="cardsContainer"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

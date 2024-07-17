@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.form-container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cards-container {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    max-height: 80vh;
+    max-width: 300px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, textarea {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card h2, .card h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+    display: inline;
+}
+
+.card p {
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 14px;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: inline;
+}
+
+.card img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.Bill {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
